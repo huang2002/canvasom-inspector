@@ -56,6 +56,10 @@ export const NODE_DISPLAY_CLASS = createClass({
 export const INSPECTOR_NODE_CHILDREN = createClass({
     listStyle: 'none',
     overflow: 'auto',
+}, {
+    ':empty::after': {
+        content: '"(empty)"',
+    },
 });
 
 export const INSPECTOR_NODE_CHILD = createClass({
