@@ -17,7 +17,7 @@ export const INSPECTOR_CONTAINER = createClass({
     border: 'solid 1px #000',
     boxShadow: '#666 0 0 10px',
     color: '#000',
-    overflow: 'hidden',
+    overflow: 'hidden auto',
     zIndex: '999',
 });
 
@@ -36,9 +36,11 @@ export const INSPECTOR_TITLE = createClass({
 
 export const INSPECTOR_ACTION = createClass({
     display: 'block',
+    overflow: 'hidden',
     textDecoration: 'underline',
     color: '#00F',
     whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
 });
 
 export const NODE_DISPLAY_TAG = createClass({
@@ -55,7 +57,6 @@ export const NODE_DISPLAY_CLASS = createClass({
 
 export const INSPECTOR_NODE_CHILDREN = createClass({
     listStyle: 'none',
-    overflow: 'auto',
 }, {
     ':empty::after': {
         content: '"(empty)"',
