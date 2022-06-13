@@ -20,8 +20,12 @@ export class Inspector {
 
     readonly $visibility: ReactiveValue<boolean>;
 
-    update() {
-        this.$target.update();
+    update(target?: CanvasNode<any>) {
+        if (target) {
+            this.$target.setSync(target);
+        } else {
+            this.$target.update();
+        }
     }
 
     show() {
