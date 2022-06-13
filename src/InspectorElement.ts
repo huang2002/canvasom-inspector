@@ -117,6 +117,13 @@ export const InspectorElement = (
                     $visibility.setSync(false);
                 }
             ),
+            InspectorAction(
+                'Refresh node information',
+                'Refresh node information.',
+                () => {
+                    $target.update();
+                }
+            ),
         ]),
 
         InspectorSection([
