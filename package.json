@@ -1,6 +1,6 @@
 {
   "name": "canvasom-inspector",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple inspector for `canvasom`.",
   "module": "./dist/canvasom-inspector.min.js",
   "main": "./dist/canvasom-inspector.umd.min.js",
