@@ -85,4 +85,4 @@ const canvasInspector = new CI.Inspector({
     target: canvasRoot,
 });
 document.body.appendChild(canvasInspector.element);
-canvasInspector.$visibility.setSync(true);
+canvasInspector.show();
