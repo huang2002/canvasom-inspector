@@ -18,8 +18,9 @@ const canvasInspector = new Inspector({
 // append the element to the document
 document.body.appendChild(canvasInspector.element);
 
-canvasInspector.$visibility.setSync(true); // show inspector
-// canvasInspector.$target.setSync(ANOTHER_NODE); // change target
+canvasInspector.show();
+
+canvasInspector.update(ANOTHER_NODE); // change target
 ```
 
 ## Links
