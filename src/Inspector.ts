@@ -24,4 +24,12 @@ export class Inspector {
         this.$target.update();
     }
 
+    show() {
+        this.$visibility.setSync(true);
+    }
+
+    hide() {
+        this.$visibility.setSync(false);
+    }
+
 }
